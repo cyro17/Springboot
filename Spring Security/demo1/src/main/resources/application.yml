@@ -1,0 +1,13 @@
+spring:
+  application:
+    name:demo1
+
+  data:
+    mongodb:
+      uri: mongodb+srv://cyron:x6N3UlTel3UnWEkt@cluster0.jod7m.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+      database: demo1
+      auto-index-creation: true
+
+
+server:
+  port: 8081

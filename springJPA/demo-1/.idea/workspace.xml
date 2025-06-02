@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="22395590-f41f-4b39-85bc-ab6e3705083b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../demo/demo-2/src/main/java/com/cyro/demo_2/excepttions/CustomException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/demo-2/src/main/java/com/cyro/demo_2/excepttions/ErrorResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/demo-2/src/main/java/com/cyro/demo_2/excepttions/GlobalCustomExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/demo-2/src/main/java/com/cyro/demo_2/repo/UserRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/demo-2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/demo-2/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/demo-2/src/main/java/com/cyro/demo_2/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/demo-2/src/main/java/com/cyro/demo_2/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/demo-2/src/main/java/com/cyro/demo_2/CustomAnnotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/demo-2/src/main/java/com/cyro/demo_2/CustomAnnotation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/demo-2/src/main/java/com/cyro/demo_2/CustomInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/demo-2/src/main/java/com/cyro/demo_2/CustomInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/demo-2/src/main/java/com/cyro/demo_2/CustomInterceptor2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/demo-2/src/main/java/com/cyro/demo_2/CustomInterceptor2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/demo-2/src/main/java/com/cyro/demo_2/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/demo-2/src/main/java/com/cyro/demo_2/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/demo-2/src/main/java/com/cyro/demo_2/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/demo-2/src/main/java/com/cyro/demo_2/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/demo-2/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/demo-2/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2tcFWR3oHnWpuRylw0C2wT7Kh97" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.SpringJpAdemoApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.demo2Application.executor&quot;: &quot;Run&quot;,
+    &quot;Application.springJPADemoApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.springJpAdemoApplication.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;oauth2&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;/Users/cyro_dev/Documents/codes/Java/springBoot/springJPA/demo-1/src/main/java/com/cyro/springJPAdemo&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/cyro_dev/Documents/codes/Java/springBoot/springJPA/demo-1&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Application.demo2Application">
+    <configuration name="demo2Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cyro.demo_2.demo2Application" />
+      <module name="springJPAdemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cyro.demo_2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="springJPADemoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cyro.springJPAdemo.springJPADemoApplication" />
+      <module name="springJPAdemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cyro.springJPAdemo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.demo2Application" />
+        <item itemvalue="Application.springJPADemoApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="22395590-f41f-4b39-85bc-ab6e3705083b" name="Changes" comment="" />
+      <created>1740643486946</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1740643486946</updated>
+    </task>
+    <servers />
+  </component>
+</project>
