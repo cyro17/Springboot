@@ -1,13 +1,18 @@
 spring:
-  application:
-    name:demo1
-
-  data:
-    mongodb:
-      uri: mongodb+srv://cyron:x6N3UlTel3UnWEkt@cluster0.jod7m.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
-      database: demo1
-      auto-index-creation: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/test
+    username: postgres
+    password: 1234
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
 
 
 server:
-  port: 8081
+  port: 8070
+
+jwt:
+  secret: FfJ7oV9zA6jW1QoZ6rxG0T0lCMo+QZkNsmX0mZlTZV4=
+

@@ -21,14 +21,14 @@ public class UserService {
 
     private static final PasswordEncoder encoder = new BCryptPasswordEncoder();
 
-    public boolean saveNewUser(User user) {
+    public User saveNewUser(User user) {
         try {
             user.setPassword(encoder.encode(user.getPassword()));
             user.setRoles(Arrays.asList("USER"));
-            userRepository.save(user);
-            return true;
+            User savedUser = userRepository.save(user);
+            return savedUser;
         } catch (Exception e) {
-            return false;
+            throw  new RuntimeException("User could not be saved! ");
         }
     }
 
@@ -62,5 +62,8 @@ public class UserService {
 
     public User findByUserName(String userName){
         return userRepository.findByUserName(userName);
+    }
+
+    public void login(String userName, String password) {
     }
 }

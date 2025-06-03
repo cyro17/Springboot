@@ -1,9 +1,19 @@
 package com.cyro.demo1.controller;
 
+import com.cyro.demo1.dto.LoginRequest;
 import com.cyro.demo1.entity.User;
+import com.cyro.demo1.jwt.JwtUtil;
 import com.cyro.demo1.service.UserService;
+import org.apache.coyote.Response;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.BadCredentialsException;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.parameters.P;
 import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -16,17 +26,39 @@ public class PublicController {
     @Autowired
     private UserService userService;
 
-    @GetMapping("/heath-check")
+    @Autowired
+    private JwtUtil jwtUtil;
+
+    @Autowired
+    private AuthenticationManager authenticationManager;
+
+    @GetMapping("/health")
     public String healthCheck(){
         return  "OK";
     }
 
-    @PostMapping("signup")
-    public void signup(@RequestBody User user){
+    @PostMapping("/signup")
+    public ResponseEntity<?> signup( @RequestBody User user){
         User newUser = new User();
         newUser.setUserName(user.getUserName());
         newUser.setPassword(user.getPassword());
-        userService.saveNewUser(newUser);
+        User savedUser = userService.saveNewUser(newUser);
+        return  new ResponseEntity<>(user, HttpStatus.OK);
     }
 
+    @PostMapping("/login")
+    public ResponseEntity<String> login(@RequestBody LoginRequest loginRequest){
+        try {
+            authenticationManager.authenticate(
+                    new UsernamePasswordAuthenticationToken(
+                            loginRequest.getUserName(), loginRequest.getPassword())
+            );
+        } catch (BadCredentialsException e){
+            throw new RuntimeException("Invalid Credetials");
+        }
+
+        return  new ResponseEntity<>(
+                jwtUtil.generateToken(loginRequest.getUserName(), 15), HttpStatus.ACCEPTED
+        );
+    }
 }
